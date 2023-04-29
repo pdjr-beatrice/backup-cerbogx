@@ -1,0 +1,29 @@
+{
+  "configuration": {
+    "installType": "local",
+    "dbusAddress": "tcp:host=192.168.1.57,port=78",
+    "MQTT": {
+      "host": "venus.local"
+    },
+    "pollInterval": 20,
+    "usePosition": true,
+    "relayPath0": "electrical.switches.venus-0",
+    "relayDisplayName0": "Generator start",
+    "relayPath1": "electrical.switches.venus-1",
+    "instanceMappings": [],
+    "blacklist": [
+      "tanks.freshWater.6.capacity",
+      "tanks.freshWater.6.currentLevel",
+      "tanks.freshWater.7.capacity",
+      "tanks.freshWater.7.currentLevel",
+      "tanks.fuel.8.capacity",
+      "tanks.fuel.8.currentLevel",
+      "tanks.fuel.9.capacity",
+      "tanks.fuel.9.currentLevel",
+      "tanks.wasteWater.0.capacity",
+      "tanks.wasteWater.0.currentLevel"
+    ]
+  },
+  "enabled": true,
+  "enableLogging": false
+}

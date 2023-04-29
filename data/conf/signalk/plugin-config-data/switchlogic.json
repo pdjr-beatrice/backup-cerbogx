@@ -1,0 +1,81 @@
+{
+  "enabled": true,
+  "enableLogging": false,
+  "configuration": {
+    "rules": [
+      {
+        "description": "CERBO GX RELAY 1",
+        "input": "(not electrical.venus.acSource:grid) and (not [16,16])",
+        "output": "[venus-1]"
+      },
+      { "description": "HYDROPHORE", "input": "[0,7] or mqtt.switch.hydrophore:1", "output": "[10,1]" },
+      { "description": "THERMAL STORE", "input": "[0,5] or mqtt.switch.thermal_store:1", "output": "[10,2]" },
+      { "description": "BOILER", "input": "[0,4] or mqtt.switch.boiler:1", "output": "[10,3]" },
+      { "description": "COOLING", "input": "[0,3] or mqtt.switch.chiller:1", "output": "[10,4]" },
+      { "description": "IMMERSION HEATER 2KW", "input": "[0,2] or mqtt.switch.immersion_heater_2kw:1", "output": "[10,5]" },
+      { "description": "IMMERSION HEATER 1KW", "input": "[0,1] or mqtt.switch.immersion_heater_1kw:1", "output": "[10,6]" },
+      { "description": "HEATING", "input": "[0,15] or mqtt.switch.circulation_pump:1", "output": "[10,7]" },
+      { "description": "HOT-WATER LOOP", "input": "[0,6] or mqtt.switch.hot_water_loop:1", "output": "[10,8]" },
+
+      { "description": "DISCHARGE PUMP", "input": "((notifications.tanks.wasteWater.0.currentLevel.override:alert and [0,11]) or ([0,11] and [0,12]))", "output": "[15,1]" },
+      { "description": "STEAMING LIGHT", "input": "[0,10] or mqtt.switch.steaming_light:1", "output": "[15,2]" },
+      { "description": "ANCHOR LIGHT", "input": "([0,9] or mqtt.switch.anchor_light:1)", "output": "[15,3]" },
+      { "description": "FOREDECK LIGHTS", "input": "[0,8] or mqtt.switch.foredeck_lights:1", "output": "[15,4]" },
+      { "description": "PROPANE ISOLATOR", "input": "[0,16] or mqtt.switch.propane_isolator:1", "output": "[15,5]" },
+
+      { "description": "STERN LIGHT", "input": "[0,10] or mqtt.switch.stern_light:1", "output": "[26,2]" },
+      { "description": "DECKWASH PUMP", "input": "[0,13] or mqtt.switch.deck_wash_pump:1", "output": "[26,8]" },
+      { "description": "ENGINE ROOM VENTILATOR [AUTO]", "input": "[16,2] or mqtt.switch.engine_room_ventilator_auto:1", "output": "[26,5]" },
+      { "description": "ENGINE ROOM VENTILATOR", "input": "[16,3] or mqtt.switch.engine_room_ventilator:1", "output": "[26,6]" },
+      {
+        "description": "MAIN BILGE VENTILATOR [AUTO]",
+        "input": "[16,4]",
+        "output": ""
+      },
+      {
+        "description": "MAIN BILGE VENTILATOR",
+        "input": "[16,5]",
+        "output": ""
+      },
+      {
+        "description": "ANCHOR UP",
+        "input": "[16,6]",
+        "output": "[31,5]"
+      },
+      {
+        "input": "[16,7]",
+        "output": "[31,6]",
+        "description": "ANCHOR DOWN"
+      },
+      {
+        "input": "[16,8]",
+        "output": "[31,4]",
+        "description": "MAST UP"
+      },
+      {
+        "input": "[16,9]",
+        "output": "[31,3]",
+        "description": "MAST DOWN"
+      },
+      { "input": "[16,8]", "output": "[26,3]", "description": "LOAD SENSE LOW" },
+      { "input": "[16,10]", "output": "[26,4]", "description": "LOAD SENSE HIGH" },
+      { "input": "notifications.control.shaftlube", "output": "[26,7]", "description": "SHAFT LUBRICATION" },
+      {
+        "input": "[16,12]",
+        "output": "[31,1]",
+        "description": "FORELOCKER HATCH OPEN"
+      },
+      {
+        "input": "[16,13]",
+        "output": "[31,2]",
+        "description": "FORELOCKER HATCH CLOSE"
+      },
+      {
+        "input": "[10,7]",
+        "output": "[eth0,1]",
+        "description": "DEVANTEC RELAY 1"
+      }
+    ]
+  },
+  "enableDebug": false
+}

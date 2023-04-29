@@ -1,0 +1,39 @@
+[
+  {
+    "context": "vessels.self",
+    "updates": [
+      {
+        "values": [
+          {
+            "path": "",
+            "value": {
+              "name": "Beatrice of Hull"
+            }
+          },
+          {
+            "path": "design.length",
+            "value": {
+              "overall": 20
+            }
+          },
+          {
+            "path": "design.beam",
+            "value": 4.8
+          },
+          {
+            "path": "design.airHeight",
+            "value": 3.55
+          },
+          {
+            "path": "sensors.gps.fromBow",
+            "value": 15
+          },
+          {
+            "path": "sensors.gps.fromCenter",
+            "value": 0
+          }
+        ]
+      }
+    ]
+  }
+]

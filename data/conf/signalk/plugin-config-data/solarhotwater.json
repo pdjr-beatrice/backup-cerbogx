@@ -1,0 +1,12 @@
+{
+  "configuration": {
+    "enablepath": "mqtt.switch.solar_hot_water_enable",
+    "outputpath": "mqtt.switch.immersion_heater_1kw",
+    "batterysocpath": "electrical.batteries.278.capacity.stateOfCharge",
+    "batterysocstartthreshold": 100,
+    "batterysocstopthreshold": 98,
+    "solarpowerpath": "electrical.solar.279.panelPower",
+    "solarpowerthreshold": 400
+  },
+  "enabled": true
+}

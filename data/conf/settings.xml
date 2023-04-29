@@ -1,0 +1,611 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Settings version="9">
+  <Alarm>
+    <Audible type="i" default="1" silent="False">0</Audible>
+    <System>
+      <GridLost type="i" min="0" max="1" default="0" silent="False">0</GridLost>
+    </System>
+    <Vebus>
+      <HighDcCurrent type="i" min="0" max="2" default="1" silent="False">1</HighDcCurrent>
+      <HighDcRipple type="i" min="0" max="2" default="1" silent="False">1</HighDcRipple>
+      <HighDcVoltage type="i" min="0" max="2" default="1" silent="False">1</HighDcVoltage>
+      <HighTemperature type="i" min="0" max="2" default="1" silent="False">1</HighTemperature>
+      <InverterOverload type="i" min="0" max="2" default="1" silent="False">1</InverterOverload>
+      <LowBattery type="i" min="0" max="2" default="1" silent="False">1</LowBattery>
+      <TemperatureSenseError type="i" min="0" max="2" default="1" silent="False">1</TemperatureSenseError>
+      <VeBusError type="i" min="0" max="2" default="2" silent="False">1</VeBusError>
+      <VoltageSenseError type="i" min="0" max="2" default="1" silent="False">1</VoltageSenseError>
+    </Vebus>
+  </Alarm>
+  <Ble>
+    <Service>
+      <Pincode type="s" default="000000" silent="False">000000</Pincode>
+    </Service>
+  </Ble>
+  <CGwacs>
+    <BatteryLife>
+      <DischargedTime type="i" default="0" silent="True">0</DischargedTime>
+      <Flags type="i" default="0" silent="True">0</Flags>
+      <MinimumSocLimit type="f" min="0.0" max="100.0" default="10.0" silent="False">10.0</MinimumSocLimit>
+      <Schedule>
+        <Charge>
+          <_0>
+            <Day type="i" min="-10" max="9" default="-7" silent="False">-7</Day>
+            <Duration type="i" default="0" silent="False">0</Duration>
+            <Soc type="i" min="0" max="100" default="100" silent="False">100</Soc>
+            <Start type="i" default="0" silent="False">0</Start>
+          </_0>
+          <_1>
+            <Day type="i" min="-10" max="9" default="-7" silent="False">-7</Day>
+            <Duration type="i" default="0" silent="False">0</Duration>
+            <Soc type="i" min="0" max="100" default="100" silent="False">100</Soc>
+            <Start type="i" default="0" silent="False">0</Start>
+          </_1>
+          <_2>
+            <Day type="i" min="-10" max="9" default="-7" silent="False">-7</Day>
+            <Duration type="i" default="0" silent="False">0</Duration>
+            <Soc type="i" min="0" max="100" default="100" silent="False">100</Soc>
+            <Start type="i" default="0" silent="False">0</Start>
+          </_2>
+          <_3>
+            <Day type="i" min="-10" max="9" default="-7" silent="False">-7</Day>
+            <Duration type="i" default="0" silent="False">0</Duration>
+            <Soc type="i" min="0" max="100" default="100" silent="False">100</Soc>
+            <Start type="i" default="0" silent="False">0</Start>
+          </_3>
+          <_4>
+            <Day type="i" min="-10" max="9" default="-7" silent="False">-7</Day>
+            <Duration type="i" default="0" silent="False">0</Duration>
+            <Soc type="i" min="0" max="100" default="100" silent="False">100</Soc>
+            <Start type="i" default="0" silent="False">0</Start>
+          </_4>
+        </Charge>
+      </Schedule>
+      <SocLimit type="f" min="0.0" max="100.0" default="10.0" silent="True">10.0</SocLimit>
+      <State type="i" default="1" silent="True">1</State>
+    </BatteryLife>
+    <DeviceIds type="s" default="" silent="False"></DeviceIds>
+  </CGwacs>
+  <CanBms>
+    <SocketcanCan1>
+      <ProductId type="i" default="0" silent="False">0</ProductId>
+    </SocketcanCan1>
+  </CanBms>
+  <Canbus>
+    <can0>
+      <Profile type="i" min="0" max="5" default="1" silent="False">1</Profile>
+    </can0>
+    <can1>
+      <Profile type="i" min="0" max="5" default="3" silent="False">3</Profile>
+    </can1>
+  </Canbus>
+  <Devices>
+    <adc_builtin0_1>
+      <Alarms>
+        <High>
+          <Active type="i" min="0" max="100" default="90" silent="False">90</Active>
+          <Delay type="i" min="0" max="60" default="5" silent="False">5</Delay>
+          <Enable type="i" min="0" max="1" default="0" silent="False">0</Enable>
+          <Restore type="i" min="0" max="100" default="80" silent="False">80</Restore>
+        </High>
+        <Low>
+          <Active type="i" min="0" max="100" default="10" silent="False">10</Active>
+          <Delay type="i" min="0" max="60" default="30" silent="False">30</Delay>
+          <Enable type="i" min="0" max="1" default="0" silent="False">0</Enable>
+          <Restore type="i" min="0" max="100" default="15" silent="False">15</Restore>
+        </Low>
+      </Alarms>
+      <Capacity type="f" min="0.0" max="1000.0" default="0.20000000298023224" silent="False">0.20000000298</Capacity>
+      <ClassAndVrmInstance type="s" default="analog:20" silent="False">analog:23</ClassAndVrmInstance>
+      <CustomName type="s" default="" silent="False"></CustomName>
+      <FilterLength type="i" min="1" max="60" default="10" silent="False">10</FilterLength>
+      <FluidType2 type="i" min="0" max="2147483644" default="0" silent="False">0</FluidType2>
+      <Function type="i" min="0" max="1" default="0" silent="False">0</Function>
+      <RawValueEmpty type="f" min="0.0" max="264.0" default="0.0" silent="False">0.0</RawValueEmpty>
+      <RawValueFull type="f" min="0.0" max="264.0" default="0.0" silent="False">180.0</RawValueFull>
+      <Shape type="s" default="" silent="False"></Shape>
+      <Standard2 type="i" min="0" max="2" default="0" silent="False">0</Standard2>
+    </adc_builtin0_1>
+    <adc_builtin0_2>
+      <Alarms>
+        <High>
+          <Active type="i" min="0" max="100" default="90" silent="False">90</Active>
+          <Delay type="i" min="0" max="60" default="5" silent="False">5</Delay>
+          <Enable type="i" min="0" max="1" default="0" silent="False">0</Enable>
+          <Restore type="i" min="0" max="100" default="80" silent="False">80</Restore>
+        </High>
+        <Low>
+          <Active type="i" min="0" max="100" default="10" silent="False">10</Active>
+          <Delay type="i" min="0" max="60" default="30" silent="False">30</Delay>
+          <Enable type="i" min="0" max="1" default="0" silent="False">0</Enable>
+          <Restore type="i" min="0" max="100" default="15" silent="False">15</Restore>
+        </Low>
+      </Alarms>
+      <Capacity type="f" min="0.0" max="1000.0" default="0.20000000298023224" silent="False">0.20000000298</Capacity>
+      <ClassAndVrmInstance type="s" default="analog:20" silent="False">analog:22</ClassAndVrmInstance>
+      <CustomName type="s" default="" silent="False"></CustomName>
+      <FilterLength type="i" min="1" max="60" default="10" silent="False">10</FilterLength>
+      <FluidType2 type="i" min="0" max="2147483644" default="0" silent="False">0</FluidType2>
+      <Function type="i" min="0" max="1" default="0" silent="False">0</Function>
+      <RawValueEmpty type="f" min="0.0" max="264.0" default="0.0" silent="False">0.0</RawValueEmpty>
+      <RawValueFull type="f" min="0.0" max="264.0" default="0.0" silent="False">180.0</RawValueFull>
+      <Shape type="s" default="" silent="False"></Shape>
+      <Standard2 type="i" min="0" max="2" default="0" silent="False">0</Standard2>
+    </adc_builtin0_2>
+    <adc_builtin0_3>
+      <Alarms>
+        <High>
+          <Active type="i" min="0" max="100" default="90" silent="False">90</Active>
+          <Delay type="i" min="0" max="60" default="5" silent="False">5</Delay>
+          <Enable type="i" min="0" max="1" default="0" silent="False">0</Enable>
+          <Restore type="i" min="0" max="100" default="80" silent="False">80</Restore>
+        </High>
+        <Low>
+          <Active type="i" min="0" max="100" default="10" silent="False">10</Active>
+          <Delay type="i" min="0" max="60" default="30" silent="False">30</Delay>
+          <Enable type="i" min="0" max="1" default="0" silent="False">0</Enable>
+          <Restore type="i" min="0" max="100" default="15" silent="False">15</Restore>
+        </Low>
+      </Alarms>
+      <Capacity type="f" min="0.0" max="1000.0" default="0.20000000298023224" silent="False">0.20000000298</Capacity>
+      <ClassAndVrmInstance type="s" default="analog:20" silent="False">analog:21</ClassAndVrmInstance>
+      <CustomName type="s" default="" silent="False"></CustomName>
+      <FilterLength type="i" min="1" max="60" default="10" silent="False">10</FilterLength>
+      <FluidType2 type="i" min="0" max="2147483644" default="0" silent="False">0</FluidType2>
+      <Function type="i" min="0" max="1" default="0" silent="False">0</Function>
+      <RawValueEmpty type="f" min="0.0" max="264.0" default="0.0" silent="False">0.0</RawValueEmpty>
+      <RawValueFull type="f" min="0.0" max="264.0" default="0.0" silent="False">180.0</RawValueFull>
+      <Shape type="s" default="" silent="False"></Shape>
+      <Standard2 type="i" min="0" max="2" default="0" silent="False">0</Standard2>
+    </adc_builtin0_3>
+    <adc_builtin0_4>
+      <Alarms>
+        <High>
+          <Active type="i" min="0" max="100" default="90" silent="False">90</Active>
+          <Delay type="i" min="0" max="60" default="5" silent="False">5</Delay>
+          <Enable type="i" min="0" max="1" default="0" silent="False">0</Enable>
+          <Restore type="i" min="0" max="100" default="80" silent="False">80</Restore>
+        </High>
+        <Low>
+          <Active type="i" min="0" max="100" default="10" silent="False">10</Active>
+          <Delay type="i" min="0" max="60" default="30" silent="False">30</Delay>
+          <Enable type="i" min="0" max="1" default="0" silent="False">0</Enable>
+          <Restore type="i" min="0" max="100" default="15" silent="False">15</Restore>
+        </Low>
+      </Alarms>
+      <Capacity type="f" min="0.0" max="1000.0" default="0.20000000298023224" silent="False">0.20000000298</Capacity>
+      <ClassAndVrmInstance type="s" default="analog:20" silent="False">analog:20</ClassAndVrmInstance>
+      <CustomName type="s" default="" silent="False"></CustomName>
+      <FilterLength type="i" min="1" max="60" default="10" silent="False">10</FilterLength>
+      <FluidType2 type="i" min="0" max="2147483644" default="0" silent="False">0</FluidType2>
+      <Function type="i" min="0" max="1" default="0" silent="False">0</Function>
+      <RawValueEmpty type="f" min="0.0" max="264.0" default="0.0" silent="False">0.0</RawValueEmpty>
+      <RawValueFull type="f" min="0.0" max="264.0" default="0.0" silent="False">180.0</RawValueFull>
+      <Shape type="s" default="" silent="False"></Shape>
+      <Standard2 type="i" min="0" max="2" default="0" silent="False">0</Standard2>
+    </adc_builtin0_4>
+    <adc_builtin0_5>
+      <ClassAndVrmInstance type="s" default="analog:20" silent="False">analog:27</ClassAndVrmInstance>
+      <CustomName type="s" default="" silent="False"></CustomName>
+      <FilterLength type="i" min="1" max="60" default="10" silent="False">10</FilterLength>
+      <Function type="i" min="0" max="1" default="0" silent="False">0</Function>
+      <Offset type="f" min="-100.0" max="100.0" default="0.0" silent="False">0.0</Offset>
+      <Scale type="f" min="0.10000000149011612" max="10.0" default="1.0" silent="False">1.0</Scale>
+      <TemperatureType2 type="i" min="0" max="2147483644" default="0" silent="False">0</TemperatureType2>
+    </adc_builtin0_5>
+    <adc_builtin0_6>
+      <ClassAndVrmInstance type="s" default="analog:20" silent="False">analog:26</ClassAndVrmInstance>
+      <CustomName type="s" default="" silent="False"></CustomName>
+      <FilterLength type="i" min="1" max="60" default="10" silent="False">10</FilterLength>
+      <Function type="i" min="0" max="1" default="0" silent="False">0</Function>
+      <Offset type="f" min="-100.0" max="100.0" default="0.0" silent="False">0.0</Offset>
+      <Scale type="f" min="0.10000000149011612" max="10.0" default="1.0" silent="False">1.0</Scale>
+      <TemperatureType2 type="i" min="0" max="2147483644" default="0" silent="False">0</TemperatureType2>
+    </adc_builtin0_6>
+    <adc_builtin0_7>
+      <ClassAndVrmInstance type="s" default="analog:20" silent="False">analog:25</ClassAndVrmInstance>
+      <CustomName type="s" default="" silent="False"></CustomName>
+      <FilterLength type="i" min="1" max="60" default="10" silent="False">10</FilterLength>
+      <Function type="i" min="0" max="1" default="0" silent="False">0</Function>
+      <Offset type="f" min="-100.0" max="100.0" default="0.0" silent="False">0.0</Offset>
+      <Scale type="f" min="0.10000000149011612" max="10.0" default="1.0" silent="False">1.0</Scale>
+      <TemperatureType2 type="i" min="0" max="2147483644" default="0" silent="False">0</TemperatureType2>
+    </adc_builtin0_7>
+    <adc_builtin0_8>
+      <ClassAndVrmInstance type="s" default="analog:20" silent="False">analog:24</ClassAndVrmInstance>
+      <CustomName type="s" default="" silent="False"></CustomName>
+      <FilterLength type="i" min="1" max="60" default="10" silent="False">10</FilterLength>
+      <Function type="i" min="0" max="1" default="0" silent="False">0</Function>
+      <Offset type="f" min="-100.0" max="100.0" default="0.0" silent="False">0.0</Offset>
+      <Scale type="f" min="0.10000000149011612" max="10.0" default="1.0" silent="False">1.0</Scale>
+      <TemperatureType2 type="i" min="0" max="2147483644" default="0" silent="False">0</TemperatureType2>
+    </adc_builtin0_8>
+    <signalk_192_168_1_2_3000_0_3>
+      <ClassAndVrmInstance type="s" default="tank:3" silent="False">tank:4</ClassAndVrmInstance>
+      <CustomName type="s" default="" silent="False"></CustomName>
+    </signalk_192_168_1_2_3000_0_3>
+    <signalk_192_168_1_2_3000_0_4>
+      <ClassAndVrmInstance type="s" default="tank:4" silent="False">tank:5</ClassAndVrmInstance>
+      <CustomName type="s" default="" silent="False"></CustomName>
+    </signalk_192_168_1_2_3000_0_4>
+    <signalk_192_168_1_2_3000_1_1>
+      <ClassAndVrmInstance type="s" default="tank:1" silent="False">tank:2</ClassAndVrmInstance>
+      <CustomName type="s" default="" silent="False"></CustomName>
+    </signalk_192_168_1_2_3000_1_1>
+    <signalk_192_168_1_2_3000_1_2>
+      <ClassAndVrmInstance type="s" default="tank:2" silent="False">tank:3</ClassAndVrmInstance>
+      <CustomName type="s" default="" silent="False"></CustomName>
+    </signalk_192_168_1_2_3000_1_2>
+    <signalk_192_168_1_2_3000_5_0>
+      <ClassAndVrmInstance type="s" default="tank:0" silent="False">tank:1</ClassAndVrmInstance>
+      <CustomName type="s" default="" silent="False"></CustomName>
+    </signalk_192_168_1_2_3000_5_0>
+    <vebus_ttyS4>
+      <CustomName type="s" default="" silent="False"></CustomName>
+    </vebus_ttyS4>
+    <vecan_socketcan_can0_C0789100E8226428>
+      <ClassAndVrmInstance type="s" default="gps:0" silent="False">gps:0</ClassAndVrmInstance>
+    </vecan_socketcan_can0_C0789100E8226428>
+    <vecan_socketcan_can0_C0A0AA00113909C3_0>
+      <ClassAndVrmInstance type="s" default="tank:0" silent="False">tank:0</ClassAndVrmInstance>
+    </vecan_socketcan_can0_C0A0AA00113909C3_0>
+    <vecan_socketcan_can0_C0A0AA00113909C3_1>
+      <ClassAndVrmInstance type="s" default="tank:0" silent="False">tank:6</ClassAndVrmInstance>
+    </vecan_socketcan_can0_C0A0AA00113909C3_1>
+    <vecan_socketcan_can0_C0A0AA00113909C3_2>
+      <ClassAndVrmInstance type="s" default="tank:0" silent="False">tank:7</ClassAndVrmInstance>
+    </vecan_socketcan_can0_C0A0AA00113909C3_2>
+    <vecan_socketcan_can0_C0A0AA00113909C3_3>
+      <ClassAndVrmInstance type="s" default="tank:0" silent="False">tank:8</ClassAndVrmInstance>
+    </vecan_socketcan_can0_C0A0AA00113909C3_3>
+    <vecan_socketcan_can0_C0A0AA00113909C3_4>
+      <ClassAndVrmInstance type="s" default="tank:0" silent="False">tank:9</ClassAndVrmInstance>
+    </vecan_socketcan_can0_C0A0AA00113909C3_4>
+    <vedirect_HQ1623IGJG4>
+      <ClassAndVrmInstance type="s" default="com.victronenergy.battery:279" silent="False">com.victronenergy.battery:278</ClassAndVrmInstance>
+    </vedirect_HQ1623IGJG4>
+    <vedirect_HQ1912B77Q7>
+      <ClassAndVrmInstance type="s" default="com.victronenergy.solarcharger:277" silent="False">com.victronenergy.solarcharger:279</ClassAndVrmInstance>
+    </vedirect_HQ1912B77Q7>
+  </Devices>
+  <DigitalInput>
+    <_1>
+      <AlarmSetting type="i" min="0" max="1" default="0" silent="False">0</AlarmSetting>
+      <Count type="i" min="0" max="2147483647" default="0" silent="True">0</Count>
+      <CustomName type="s" default="" silent="False"></CustomName>
+      <InvertAlarm type="i" min="0" max="1" default="0" silent="False">0</InvertAlarm>
+      <InvertTranslation type="i" min="0" max="1" default="0" silent="False">0</InvertTranslation>
+      <Multiplier type="f" min="0.0" max="1.0" default="0.001" silent="False">0.001</Multiplier>
+      <Type type="i" min="0" max="10" default="0" silent="False">0</Type>
+    </_1>
+    <_2>
+      <AlarmSetting type="i" min="0" max="1" default="0" silent="False">0</AlarmSetting>
+      <Count type="i" min="0" max="2147483647" default="0" silent="True">0</Count>
+      <CustomName type="s" default="" silent="False"></CustomName>
+      <InvertAlarm type="i" min="0" max="1" default="0" silent="False">0</InvertAlarm>
+      <InvertTranslation type="i" min="0" max="1" default="0" silent="False">0</InvertTranslation>
+      <Multiplier type="f" min="0.0" max="1.0" default="0.001" silent="False">0.001</Multiplier>
+      <Type type="i" min="0" max="10" default="0" silent="False">0</Type>
+    </_2>
+    <_3>
+      <AlarmSetting type="i" min="0" max="1" default="0" silent="False">0</AlarmSetting>
+      <Count type="i" min="0" max="2147483647" default="0" silent="True">0</Count>
+      <CustomName type="s" default="" silent="False"></CustomName>
+      <InvertAlarm type="i" min="0" max="1" default="0" silent="False">0</InvertAlarm>
+      <InvertTranslation type="i" min="0" max="1" default="0" silent="False">0</InvertTranslation>
+      <Multiplier type="f" min="0.0" max="1.0" default="0.001" silent="False">0.001</Multiplier>
+      <Type type="i" min="0" max="10" default="0" silent="False">0</Type>
+    </_3>
+    <_4>
+      <AlarmSetting type="i" min="0" max="1" default="0" silent="False">0</AlarmSetting>
+      <Count type="i" min="0" max="2147483647" default="0" silent="True">0</Count>
+      <CustomName type="s" default="" silent="False"></CustomName>
+      <InvertAlarm type="i" min="0" max="1" default="0" silent="False">0</InvertAlarm>
+      <InvertTranslation type="i" min="0" max="1" default="0" silent="False">0</InvertTranslation>
+      <Multiplier type="f" min="0.0" max="1.0" default="0.001" silent="False">0.001</Multiplier>
+      <Type type="i" min="0" max="10" default="0" silent="False">0</Type>
+    </_4>
+  </DigitalInput>
+  <Dvcc>
+    <Flags type="i" default="0" silent="False">0</Flags>
+  </Dvcc>
+  <FischerPanda0>
+    <AcLoad>
+      <Enabled type="i" min="0" max="1" default="0" silent="False">0</Enabled>
+      <Measurement type="i" min="0" max="100" default="0" silent="False">0</Measurement>
+      <QuietHoursStartValue type="i" min="0" max="100000" default="1900" silent="False">1900</QuietHoursStartValue>
+      <QuietHoursStopValue type="i" min="0" max="100000" default="1200" silent="False">1200</QuietHoursStopValue>
+      <StartTimer type="i" min="0" max="10000" default="20" silent="False">20</StartTimer>
+      <StartValue type="i" min="5" max="100000" default="1600" silent="False">1600</StartValue>
+      <StopTimer type="i" min="0" max="10000" default="20" silent="False">20</StopTimer>
+      <StopValue type="i" min="0" max="100000" default="800" silent="False">800</StopValue>
+    </AcLoad>
+    <AccumulatedDaily type="s" default="" silent="True"></AccumulatedDaily>
+    <AccumulatedTotal type="i" default="0" silent="True">0</AccumulatedTotal>
+    <Alarms>
+      <NoGeneratorAtAcIn type="i" min="0" max="1" default="0" silent="False">0</NoGeneratorAtAcIn>
+    </Alarms>
+    <AutoStartEnabled type="i" min="0" max="1" default="1" silent="False">1</AutoStartEnabled>
+    <BatteryCurrent>
+      <Enabled type="i" min="0" max="1" default="0" silent="False">0</Enabled>
+      <QuietHoursStartValue type="f" min="0.0" max="10000.0" default="20.5" silent="False">20.5</QuietHoursStartValue>
+      <QuietHoursStopValue type="f" min="0.0" max="10000.0" default="15.5" silent="False">15.5</QuietHoursStopValue>
+      <StartTimer type="i" min="0" max="10000" default="20" silent="False">20</StartTimer>
+      <StartValue type="f" min="0.5" max="10000.0" default="10.5" silent="False">10.5</StartValue>
+      <StopTimer type="i" min="0" max="10000" default="20" silent="False">20</StopTimer>
+      <StopValue type="f" min="0.0" max="10000.0" default="5.5" silent="False">5.5</StopValue>
+    </BatteryCurrent>
+    <BatteryService type="s" default="default" silent="False">default</BatteryService>
+    <BatteryVoltage>
+      <Enabled type="i" min="0" max="1" default="0" silent="False">0</Enabled>
+      <QuietHoursStartValue type="f" min="0.0" max="100.0" default="11.9" silent="False">11.9</QuietHoursStartValue>
+      <QuietHoursStopValue type="f" min="0.0" max="100.0" default="12.4" silent="False">12.4</QuietHoursStopValue>
+      <StartTimer type="i" min="0" max="10000" default="20" silent="False">20</StartTimer>
+      <StartValue type="f" min="0.0" max="150.0" default="11.5" silent="False">11.5</StartValue>
+      <StopTimer type="i" min="0" max="10000" default="20" silent="False">20</StopTimer>
+      <StopValue type="f" min="0.0" max="150.0" default="12.4" silent="False">12.4</StopValue>
+    </BatteryVoltage>
+    <InverterHighTemp>
+      <Enabled type="i" min="0" max="1" default="0" silent="False">0</Enabled>
+      <StartTimer type="i" min="0" max="10000" default="20" silent="False">20</StartTimer>
+      <StopTimer type="i" min="0" max="10000" default="20" silent="False">20</StopTimer>
+    </InverterHighTemp>
+    <InverterOverload>
+      <Enabled type="i" min="0" max="1" default="0" silent="False">0</Enabled>
+      <StartTimer type="i" min="0" max="10000" default="20" silent="False">20</StartTimer>
+      <StopTimer type="i" min="0" max="10000" default="20" silent="False">20</StopTimer>
+    </InverterOverload>
+    <MinimumRuntime type="i" min="0" max="86400" default="0" silent="False">0</MinimumRuntime>
+    <OnLossCommunication type="i" min="0" max="2" default="0" silent="False">0</OnLossCommunication>
+    <QuietHours>
+      <Enabled type="i" min="0" max="1" default="0" silent="False">0</Enabled>
+      <EndTime type="i" min="0" max="86400" default="21600" silent="False">21600</EndTime>
+      <StartTime type="i" min="0" max="86400" default="75600" silent="False">75600</StartTime>
+    </QuietHours>
+    <Soc>
+      <Enabled type="i" min="0" max="1" default="0" silent="False">0</Enabled>
+      <QuietHoursStartValue type="i" min="0" max="100" default="90" silent="False">90</QuietHoursStartValue>
+      <QuietHoursStopValue type="i" min="0" max="100" default="90" silent="False">90</QuietHoursStopValue>
+      <StartValue type="i" min="0" max="100" default="80" silent="False">80</StartValue>
+      <StopValue type="i" min="0" max="100" default="90" silent="False">90</StopValue>
+    </Soc>
+    <StopWhenAc1Available type="i" min="0" max="10" default="0" silent="False">0</StopWhenAc1Available>
+    <TestRun>
+      <Duration type="i" min="1" max="86400" default="7200" silent="False">7200</Duration>
+      <Enabled type="i" min="0" max="1" default="0" silent="False">0</Enabled>
+      <Interval type="i" min="1" max="365" default="28" silent="False">28</Interval>
+      <RunTillBatteryFull type="i" min="0" max="1" default="0" silent="False">0</RunTillBatteryFull>
+      <SkipRuntime type="i" min="0" max="100000" default="0" silent="False">0</SkipRuntime>
+      <StartDate type="i" min="0" max="10000000000" default="1483228800" silent="False">1483228800</StartDate>
+      <StartTime type="i" min="0" max="86400" default="54000" silent="False">54000</StartTime>
+    </TestRun>
+  </FischerPanda0>
+  <Fronius>
+    <AutoScan type="i" default="1" silent="False">1</AutoScan>
+    <IPAddresses type="s" default="" silent="False"></IPAddresses>
+    <InverterIds type="s" default="" silent="False"></InverterIds>
+    <KnownIPAddresses type="s" default="" silent="False"></KnownIPAddresses>
+    <PortNumber type="i" default="80" silent="False">80</PortNumber>
+  </Fronius>
+  <Generator0>
+    <AcLoad>
+      <Enabled type="i" min="0" max="1" default="0" silent="False">0</Enabled>
+      <Measurement type="i" min="0" max="100" default="0" silent="False">0</Measurement>
+      <QuietHoursStartValue type="i" min="0" max="100000" default="1900" silent="False">1900</QuietHoursStartValue>
+      <QuietHoursStopValue type="i" min="0" max="100000" default="1200" silent="False">1200</QuietHoursStopValue>
+      <StartTimer type="i" min="0" max="10000" default="20" silent="False">20</StartTimer>
+      <StartValue type="i" min="5" max="100000" default="1600" silent="False">1600</StartValue>
+      <StopTimer type="i" min="0" max="10000" default="20" silent="False">20</StopTimer>
+      <StopValue type="i" min="0" max="100000" default="800" silent="False">800</StopValue>
+    </AcLoad>
+    <AccumulatedDaily type="s" default="" silent="True">{"1680220800": 0, "1680307200": 0, "1680393600": 0, "1680480000": 0, "1680566400": 0, "1680652800": 0, "1680739200": 0, "1680825600": 0, "1680912000": 0, "1680998400": 0, "1681084800": 0, "1681171200": 0, "1681257600": 0, "1681344000": 0, "1681430400": 0, "1681516800": 0, "1681603200": 0, "1681689600": 0, "1681776000": 0, "1681862400": 0, "1681948800": 0, "1682035200": 0, "1682121600": 0, "1682208000": 3073, "1682294400": 5978, "1682380800": 720, "1682467200": 0, "1682553600": 0, "1682640000": 4865, "1682726400": 6060}</AccumulatedDaily>
+    <AccumulatedTotal type="i" default="0" silent="True">667242</AccumulatedTotal>
+    <Alarms>
+      <NoGeneratorAtAcIn type="i" min="0" max="1" default="0" silent="False">1</NoGeneratorAtAcIn>
+    </Alarms>
+    <AutoStartEnabled type="i" min="0" max="1" default="1" silent="False">1</AutoStartEnabled>
+    <BatteryCurrent>
+      <Enabled type="i" min="0" max="1" default="0" silent="False">0</Enabled>
+      <QuietHoursStartValue type="f" min="0.0" max="10000.0" default="20.5" silent="False">20.5</QuietHoursStartValue>
+      <QuietHoursStopValue type="f" min="0.0" max="10000.0" default="15.5" silent="False">15.5</QuietHoursStopValue>
+      <StartTimer type="i" min="0" max="10000" default="20" silent="False">20</StartTimer>
+      <StartValue type="f" min="0.5" max="10000.0" default="10.5" silent="False">10.5</StartValue>
+      <StopTimer type="i" min="0" max="10000" default="20" silent="False">20</StopTimer>
+      <StopValue type="f" min="0.0" max="10000.0" default="5.5" silent="False">5.5</StopValue>
+    </BatteryCurrent>
+    <BatteryService type="s" default="default" silent="False">default</BatteryService>
+    <BatteryVoltage>
+      <Enabled type="i" min="0" max="1" default="0" silent="False">0</Enabled>
+      <QuietHoursStartValue type="f" min="0.0" max="100.0" default="11.9" silent="False">11.9</QuietHoursStartValue>
+      <QuietHoursStopValue type="f" min="0.0" max="100.0" default="12.4" silent="False">12.4</QuietHoursStopValue>
+      <StartTimer type="i" min="0" max="10000" default="20" silent="False">20</StartTimer>
+      <StartValue type="f" min="0.0" max="150.0" default="11.5" silent="False">11.5</StartValue>
+      <StopTimer type="i" min="0" max="10000" default="20" silent="False">20</StopTimer>
+      <StopValue type="f" min="0.0" max="150.0" default="12.4" silent="False">12.4</StopValue>
+    </BatteryVoltage>
+    <InverterHighTemp>
+      <Enabled type="i" min="0" max="1" default="0" silent="False">0</Enabled>
+      <StartTimer type="i" min="0" max="10000" default="20" silent="False">20</StartTimer>
+      <StopTimer type="i" min="0" max="10000" default="20" silent="False">20</StopTimer>
+    </InverterHighTemp>
+    <InverterOverload>
+      <Enabled type="i" min="0" max="1" default="0" silent="False">0</Enabled>
+      <StartTimer type="i" min="0" max="10000" default="20" silent="False">20</StartTimer>
+      <StopTimer type="i" min="0" max="10000" default="20" silent="False">20</StopTimer>
+    </InverterOverload>
+    <MinimumRuntime type="i" min="0" max="86400" default="0" silent="False">5</MinimumRuntime>
+    <OnLossCommunication type="i" min="0" max="2" default="0" silent="False">0</OnLossCommunication>
+    <QuietHours>
+      <Enabled type="i" min="0" max="1" default="0" silent="False">1</Enabled>
+      <EndTime type="i" min="0" max="86400" default="21600" silent="False">28800</EndTime>
+      <StartTime type="i" min="0" max="86400" default="75600" silent="False">75600</StartTime>
+    </QuietHours>
+    <Soc>
+      <Enabled type="i" min="0" max="1" default="0" silent="False">1</Enabled>
+      <QuietHoursStartValue type="i" min="0" max="100" default="90" silent="False">60</QuietHoursStartValue>
+      <QuietHoursStopValue type="i" min="0" max="100" default="90" silent="False">80</QuietHoursStopValue>
+      <StartValue type="i" min="0" max="100" default="80" silent="False">75</StartValue>
+      <StopValue type="i" min="0" max="100" default="90" silent="False">90</StopValue>
+    </Soc>
+    <StopWhenAc1Available type="i" min="0" max="10" default="0" silent="False">0</StopWhenAc1Available>
+    <TestRun>
+      <Duration type="i" min="1" max="86400" default="7200" silent="False">7200</Duration>
+      <Enabled type="i" min="0" max="1" default="0" silent="False">0</Enabled>
+      <Interval type="i" min="1" max="365" default="28" silent="False">28</Interval>
+      <RunTillBatteryFull type="i" min="0" max="1" default="0" silent="False">0</RunTillBatteryFull>
+      <SkipRuntime type="i" min="0" max="100000" default="0" silent="False">0</SkipRuntime>
+      <StartDate type="i" min="0" max="10000000000" default="1483228800" silent="False">1483228800</StartDate>
+      <StartTime type="i" min="0" max="86400" default="54000" silent="False">54000</StartTime>
+    </TestRun>
+  </Generator0>
+  <Gps>
+    <Format type="i" default="0" silent="False">0</Format>
+    <SpeedUnit type="s" default="km/h" silent="False">km/h</SpeedUnit>
+  </Gps>
+  <Gui>
+    <AutoBrightness type="i" min="0" max="1" default="1" silent="False">0</AutoBrightness>
+    <Brightness type="i" min="0" max="100" default="100" silent="False">100</Brightness>
+    <DefaultOverview type="s" default="" silent="False">OverviewHub</DefaultOverview>
+    <DemoMode type="i" min="0" max="3" default="0" silent="False">0</DemoMode>
+    <DisplayOff type="i" default="600" silent="False">600</DisplayOff>
+    <Language type="s" default="en" silent="False">en</Language>
+    <MobileOverview type="i" min="0" max="1" default="0" silent="False">1</MobileOverview>
+    <StartWithMenuView type="i" min="0" max="1" default="0" silent="True">0</StartWithMenuView>
+    <TanksOverview type="i" min="0" max="1" default="0" silent="False">1</TanksOverview>
+  </Gui>
+  <ModbusClient>
+    <tcp>
+      <AutoScan type="i" min="0" max="1" default="0" silent="False">0</AutoScan>
+      <Devices type="s" default="" silent="False"></Devices>
+    </tcp>
+  </ModbusClient>
+  <Relay>
+    <Function type="i" default="0" silent="False">1</Function>
+    <Polarity type="i" default="0" silent="False">0</Polarity>
+    <_0>
+      <InitialState type="i" min="0" max="1" default="0" silent="False">0</InitialState>
+    </_0>
+    <_1>
+      <InitialState type="i" min="0" max="1" default="0" silent="False">1</InitialState>
+    </_1>
+  </Relay>
+  <Sensors>
+    <OnPosition>
+      <ACIn1_L1 type="s" default="" silent="False"></ACIn1_L1>
+      <ACIn1_L2 type="s" default="" silent="False"></ACIn1_L2>
+      <ACIn1_L3 type="s" default="" silent="False"></ACIn1_L3>
+      <ACIn2_L1 type="s" default="" silent="False"></ACIn2_L1>
+      <ACIn2_L2 type="s" default="" silent="False"></ACIn2_L2>
+      <ACIn2_L3 type="s" default="" silent="False"></ACIn2_L3>
+      <ACOut_L1 type="s" default="" silent="False"></ACOut_L1>
+      <ACOut_L2 type="s" default="" silent="False"></ACOut_L2>
+      <ACOut_L3 type="s" default="" silent="False"></ACOut_L3>
+    </OnPosition>
+  </Sensors>
+  <Services>
+    <AccessPoint type="i" min="0" max="1" default="1" silent="False">0</AccessPoint>
+    <Bluetooth type="i" min="0" max="1" default="1" silent="False">1</Bluetooth>
+    <Bol type="i" min="0" max="7" default="0" silent="False">0</Bol>
+    <Console type="i" default="0" silent="False">0</Console>
+    <FischerPandaAutoStartStop type="i" min="0" max="1" default="0" silent="False">0</FischerPandaAutoStartStop>
+    <Modbus type="i" min="0" max="1" default="0" silent="False">0</Modbus>
+    <MqttLocal type="i" min="0" max="1" default="0" silent="False">0</MqttLocal>
+    <MqttLocalInsecure type="i" min="0" max="1" default="0" silent="False">0</MqttLocalInsecure>
+    <MqttN2k type="i" min="0" max="1" default="0" silent="False">0</MqttN2k>
+    <MqttVrm type="i" min="0" max="1" default="0" silent="False">1</MqttVrm>
+    <NodeRed type="i" min="0" max="1" default="0" silent="False">0</NodeRed>
+    <SignalK type="i" min="0" max="1" default="0" silent="False">1</SignalK>
+    <Socketcand type="i" min="0" max="1" default="0" silent="False">0</Socketcand>
+  </Services>
+  <System>
+    <AccessLevel type="i" min="0" max="3" default="1" silent="False">2</AccessLevel>
+    <ActiveNetworkConnection type="i" min="-1" max="3" default="-1" silent="True">1</ActiveNetworkConnection>
+    <AutoUpdate type="i" min="0" max="3" default="2" silent="False">0</AutoUpdate>
+    <ImageType type="i" min="0" max="1" default="0" silent="False">1</ImageType>
+    <LogLevel type="i" default="2" silent="False">2</LogLevel>
+    <ReleaseType type="i" min="0" max="3" default="0" silent="False">0</ReleaseType>
+    <RemoteSupport type="i" min="0" max="1" default="0" silent="False">0</RemoteSupport>
+    <RemoteSupportIpAndPort type="s" default="0" silent="False">84.22.108.49;24130</RemoteSupportIpAndPort>
+    <SSHLocal type="i" min="0" max="1" default="0" silent="False">1</SSHLocal>
+    <TimeZone type="s" default="/UTC" silent="False">Europe/Berlin</TimeZone>
+    <VncInternet type="i" min="0" max="1" default="0" silent="False">1</VncInternet>
+    <VncLocal type="i" min="0" max="1" default="0" silent="False">1</VncLocal>
+    <VolumeUnit type="i" default="0" silent="False">0</VolumeUnit>
+  </System>
+  <SystemSetup>
+    <AcInput1 type="i" min="0" max="3" default="0" silent="False">2</AcInput1>
+    <AcInput2 type="i" min="0" max="3" default="0" silent="False">1</AcInput2>
+    <Batteries>
+      <Configuration>
+        <com_victronenergy_battery>
+          <_278>
+            <Enabled type="i" min="0" max="1" default="0" silent="False">0</Enabled>
+            <Name type="s" default="" silent="False"></Name>
+            <Service type="s" default="" silent="False">com.victronenergy.battery/278</Service>
+            <_1>
+              <Enabled type="i" min="0" max="1" default="0" silent="False">0</Enabled>
+              <Name type="s" default="" silent="False"></Name>
+              <Service type="s" default="" silent="False">com.victronenergy.battery/278/1</Service>
+            </_1>
+          </_278>
+        </com_victronenergy_battery>
+        <com_victronenergy_vebus>
+          <_276>
+            <Enabled type="i" min="0" max="1" default="0" silent="False">0</Enabled>
+            <Name type="s" default="" silent="False"></Name>
+            <Service type="s" default="" silent="False">com.victronenergy.vebus/276</Service>
+          </_276>
+        </com_victronenergy_vebus>
+      </Configuration>
+    </Batteries>
+    <BatteryCurrentSense type="i" default="1" silent="False">1</BatteryCurrentSense>
+    <BatteryService type="s" default="default" silent="False">default</BatteryService>
+    <HasAcOutSystem type="i" min="0" max="1" default="1" silent="False">1</HasAcOutSystem>
+    <HasDcSystem type="i" min="0" max="1" default="0" silent="False">1</HasDcSystem>
+    <MaxChargeCurrent type="i" min="-1" max="10000" default="-1" silent="False">-1</MaxChargeCurrent>
+    <MaxChargeVoltage type="f" min="0.0" max="80.0" default="0.0" silent="False">0.0</MaxChargeVoltage>
+    <SharedTemperatureSense type="i" default="1" silent="False">1</SharedTemperatureSense>
+    <SharedVoltageSense type="i" default="1" silent="False">1</SharedVoltageSense>
+    <SystemName type="s" default="" silent="False">BEATRICE</SystemName>
+    <TemperatureService type="s" default="default" silent="False">default</TemperatureService>
+  </SystemSetup>
+  <Vecan>
+    <can0>
+      <FreeIdentityNumber type="i" min="0" max="500" default="0" silent="False">1</FreeIdentityNumber>
+      <MainInterface>
+        <Description2 type="s" default="" silent="False"></Description2>
+        <IdentityNumber type="i" min="0" max="500" default="0" silent="False">0</IdentityNumber>
+        <Instance type="i" min="0" max="252" default="0" silent="False">0</Instance>
+        <Nad type="i" min="0" max="251" default="225" silent="False">225</Nad>
+        <SystemInstance type="i" min="0" max="252" default="0" silent="False">0</SystemInstance>
+      </MainInterface>
+      <N2kGatewayEnabled type="i" min="0" max="1" default="0" silent="False">0</N2kGatewayEnabled>
+      <VenusUniqueId type="i" min="1" max="19" default="1" silent="False">1</VenusUniqueId>
+    </can0>
+  </Vecan>
+  <Victron>
+    <Products>
+      <HQ1623IGJG4>
+        <CustomName type="s" default="" silent="False"></CustomName>
+      </HQ1623IGJG4>
+      <HQ1912B77Q7>
+        <CustomName type="s" default="" silent="False"></CustomName>
+      </HQ1912B77Q7>
+    </Products>
+  </Victron>
+  <Vrmlogger>
+    <ExternalStorageDir type="s" default="" silent="False"></ExternalStorageDir>
+    <Http>
+      <Proxy type="s" default="" silent="False"></Proxy>
+      <ProxyPort type="s" default="" silent="False"></ProxyPort>
+    </Http>
+    <HttpsEnabled type="i" min="0" max="1" default="0" silent="False">1</HttpsEnabled>
+    <LogInterval type="i" default="900" silent="False">900</LogInterval>
+    <Logmode type="i" min="0" max="2" default="1" silent="False">1</Logmode>
+    <RamDiskMode type="i" min="0" max="1" default="0" silent="False">0</RamDiskMode>
+    <Url type="s" default="" silent="False"></Url>
+  </Vrmlogger>
+  <Watchdog>
+    <VrmTimeout type="i" min="0" max="86400" default="0" silent="False">0</VrmTimeout>
+  </Watchdog>
+</Settings>

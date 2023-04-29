@@ -1,0 +1,9 @@
+{
+  "configuration": {
+    "interface": "n2k-on-ve.can-socket",
+    "threshold": 0,
+    "restart": true,
+    "notificationpath": "notifications.interfacewatchdog"
+  },
+  "enabled": true
+}
